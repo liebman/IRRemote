@@ -6,3 +6,5 @@
 /Release
 /libraries
 /core
+*.bak
+*-bak

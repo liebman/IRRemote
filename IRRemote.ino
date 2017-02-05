@@ -57,7 +57,7 @@ void setup() {
   feedback.blink(FEEDBACK_LED_SLOW);
   WiFiManager wifi;
   wifi.setAPCallback([](WiFiManager *){feedback.blink(FEEDBACK_LED_FAST);});
-  String ssid = "STFramework" + String(ESP.getChipId());
+  String ssid = "IRRemote" + String(ESP.getChipId());
   wifi.autoConnect(ssid.c_str(), NULL);
   feedback.off();
 
@@ -97,5 +97,3 @@ void loop() {
   reset.loop(); // handle reset from main loop
   delay(1);
 }
-
- 
